@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background: #1e1e1e;
+}
+*{
+  box-sizing: border-box;
+}
+.container {
+  max-width: 700px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row{
+  display: flex;
+  padding: 0px;
+  width: 100%;
+  justify-content: center;
+  gap: 0px;
+  background-color: #e9e9e9;
+  border-radius: 0px 50px 0px 50px;
+  overflow: hidden;
+}
+.container .col-md-6 {
+  width: 50%;
+  background-color: #e9e9e9;
+  padding: 25px;
+  border-radius: 0px;
+  min-height: 250px;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.col-group-img{
+  width: 50%;
+  max-width: 50%;
+  background-color: #fff;
+  padding: 0px;
+  border: solid 0px #94d4ff;
+  border-radius: 0px;
+  padding: 20px 0px;
+}
+.col-group-img img{
+  max-width: 100%;
+}
+.col-group-img h2 {
+  color: #000;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.container .col-md-6 form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .col-md-6 form .form-group{
+  display: flex;
+  flex-direction: column;
+}
+.container .col-md-6 form .form-group label{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.container .col-md-6 form .form-group input{
+  padding: 10px;
+  border: solid 1px #a9a8a8;
+  margin-bottom: 25px;
+  outline: none;
+  border-radius: 4px;
+}
+.btn{
+  background-color: #464646;
+  padding: 12px;
+  border-radius: 4px;
+  width: auto;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #000;
+}
+.img-box-search{
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-box-search img{
+  border-radius: 10px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  .container .col-md-6{
+    width: 100%;
+  }
+  .col-group-img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
